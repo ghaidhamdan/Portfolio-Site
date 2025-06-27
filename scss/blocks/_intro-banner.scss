@@ -1,0 +1,38 @@
+@use '../utils/variables'as *;
+@use '../utils/mixins'as *;
+.intro-banner {
+  background-color: $bg-color;
+color: black;
+padding: 5rem 2rem;
+text-align: center;
+@media (min-width: 768px) {
+display: flex;
+text-align: left;
+align-items: center;
+gap: 2rem;
+}
+&__profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+&__content {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .intro-banner__buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+}
+}

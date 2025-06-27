@@ -1,0 +1,55 @@
+@use '../utils/variables'as *;
+@use '../utils/mixins'as *;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 1rem 2rem;
+  @include transition(all); 
+
+
+  &.scrolled {
+    padding: 0.5rem 2rem; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+  }
+
+ 
+  &__nav {
+    @include flex-center;
+    justify-content:center;
+    align-items: center;
+  }
+
+
+  &__links {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      color: $text-color;
+      font-weight: 500;
+      font-size: 1rem;
+      @include transition(color);
+
+      &:hover {
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .header__links {
+      display: flex;
+      align-items: center;  
+      gap: 1rem;
+      font-size: 18px;
+    }
+  }
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="dist/main.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="header__nav">
+      <div class="header__links">
+        <a href="#projects">Projects</a>
+        <a href="#">Skills</a>
+        <a href="#">Resume</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+  <section class="intro-banner">
+    <img src="img/profile.png" alt="PWeb developer illustration" class="intro-banner__profile-img" />
+    <div class="intro-banner__content">
+      <h1>Hi, I'm Your Ghaid Raed Hamdan</h1>
+      <p>Web developer passionate about clean design and accessibility.</p>
+      <div class="intro-banner__buttons">
+        <button class="btn btn--primary" aria-label="Contact Me">Contact Me</button>
+        <button class="btn btn--secondary" aria-label="See All Projects">View Projects</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="projects__heading">Latest Projects</h2>
+    <div class="projects__grid">
+      
+      <div class="projects__card">
+        <img src="img/photo2.jpeg" alt="Portfolio Website" />
+        <h3>Responsive Portfolio Website</h3>
+        <p>A personal portfolio website to showcase your skills, projects, and contact information. Built using HTML, SCSS, and JavaScript with a responsive layout for all devices.</p>
+      </div>
+  
+      <div class="projects__card">
+        <img src="img/photo1.jpeg" alt="Weather App" />
+        <h3>JavaScript Weather App</h3>
+        <p>A weather application that fetches live weather data using a public API. Users can search for any city and get the current temperature, weather condition, and more.</p>
+      </div>
+  
+      <div class="projects__card">
+        <img src="img/photo3.jpeg" alt="Mockup of a modern landing page design for a startup" />
+        <h3>Startup Landing Page</h3>
+        <p>A clean and modern landing page design for a fictional startup. Includes sections like features, testimonials, and a call-to-action. Fully responsive and built with BEM and SCSS.</p>
+      </div>
+    </div>
+    <div class="projects__button">
+      <button class="btn btn--attention" aria-label="See All Projects">See All Projects</button>
+    </div>
+  </section>
+  
+  </main>
+  <footer class="footer__copyright">
+    <p>&copy; Ghaid Hamdan 2025</p>
+  </footer>
+
+</body>
+</html>

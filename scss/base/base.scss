@@ -1,0 +1,27 @@
+@use 'resets';
+@use '../utils/variables'as *;
+
+body {
+    line-height: 1.6;
+    background-color: #fff;
+    color: #1a1a1a;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: $text-color;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  

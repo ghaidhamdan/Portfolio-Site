@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn:focus {
+  outline: 2px solid #0f62fe;
+  outline-offset: 2px;
+}
+
+.btn--primary {
+  background-color: #0f62fe;
+  color: #f8f9fa;
+}
+
+.btn--primary:hover {
+  background-color: #0f62fe;
+}
+
+.btn--secondary {
+  background-color: #f8f9fa;
+  color: #0f62fe;
+  border: 2px solid #0f62fe;
+}
+
+.btn--secondary:hover {
+  background-color: #0f62fe;
+  color: #f8f9fa;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.btn--attention {
+  background-color: #0f62fe;
+  color: #f8f9fa;
+  animation: pulse 2s ease infinite;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #212529;
+}
+.footer__copyright a {
+  color: #333;
+  text-decoration: none;
+}
+.footer__copyright a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.header.scrolled {
+  padding: 0.5rem 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.header__links {
+  display: flex;
+  gap: 2rem;
+}
+.header__links a {
+  color: #212529;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+.header__links a:hover {
+  text-decoration: none;
+  color: #0f62fe;
+}
+@media (max-width: 768px) {
+  .header .header__links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 18px;
+  }
+}
+
+.intro-banner {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .intro-banner {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.intro-banner__profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.intro-banner__content h1 {
+  font-size: 2.5rem;
+}
+.intro-banner__content p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.intro-banner__content .intro-banner__buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.projects {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+.projects__heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.projects__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.projects__card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1019607843);
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+.projects__card:hover {
+  transform: scale(1.03);
+}
+.projects__card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: calc(200px + 5vw);
+}
+.projects__card h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+.projects__card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.projects__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}/*# sourceMappingURL=main.css.map */

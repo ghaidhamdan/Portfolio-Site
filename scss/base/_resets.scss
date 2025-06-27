@@ -1,0 +1,35 @@
+@use '../utils/variables'as *;
+@use '../utils/mixins'as *;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+button{
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
